@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors())
+app.use('/static', express.static('public'))
 
 app.get('/tweet', (req, res) => {
     getNews()
