@@ -1,7 +1,6 @@
 const Constants = require('./constants');
 
 const Twitter = require('twitter');
-
 const client = new Twitter({
     consumer_key: Constants.CONSUMER_KEY,
     consumer_secret: Constants.CONSUMER_SECRET,
