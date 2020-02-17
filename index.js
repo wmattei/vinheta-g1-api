@@ -12,4 +12,4 @@ app.get('/tweet', (req, res) => {
         .catch(err => res.send(err));
 });
 
-app.listen(port, () => console.log(`App listening on port ${port}!`));
+app.listen(proccess.env.PORT || port, () => console.log(`App listening on port ${port}!`));
